@@ -6,77 +6,102 @@
     <title>Samarth Enterprises | Waterproofing Services in Navi Mumbai</title>
     <style>
         
-/* OUR WORK SECTION */
-#work {
+/* HEADER */
+.main-header {
+  background: linear-gradient(135deg, #0a3d62, #1e90ff);
+  color: #fff;
   padding: 60px 20px;
-  background: #f8f9fb;
   text-align: center;
 }
 
-.section-title {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.section-subtitle {
-  color: #555;
-  margin-bottom: 40px;
-}
-
-/* GRID */
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
+/* LOGO BOX */
+.logo-box {
+  max-width: 800px;
   margin: auto;
 }
 
-/* CARD */
-.work-item {
+/* LOGO ICON */
+.logo-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
   background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
+  color: #1e90ff;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
-.work-item:hover {
-  transform: translateY(-8px);
+/* FIRM NAME */
+.logo-box h1 {
+  font-size: 42px;
+  margin: 10px 0;
+  letter-spacing: 1px;
 }
 
-/* IMAGE FIX (IMPORTANT) */
-.work-item img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
+/* TAGLINE */
+.logo-box p {
+  font-size: 16px;
+  opacity: 0.9;
 }
 
-/* TEXT */
-.work-text {
-  padding: 20px;
+/* NAVIGATION */
+.main-nav {
+  background: #ffffff;
+  text-align: center;
+  padding: 15px 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-.work-text h3 {
-  margin: 0;
-  font-size: 18px;
+.main-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
   color: #0a3d62;
+  position: relative;
 }
 
-.work-text p {
-  margin-top: 6px;
-  color: #666;
-  font-size: 14px;
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #1e90ff;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s;
 }
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .logo-box h1 {
+    font-size: 30px;
+  }
+
+  .main-nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+}
+
 
     </style>
     
 </head>
 <body>
 
-<header class="site-header">
+<header class="main-header">
   <div class="logo-box">
     <div class="logo-icon">SE</div>
     <h1>Samarth Enterprises</h1>
@@ -88,9 +113,10 @@
   <a href="#home">Home</a>
   <a href="#about">About Us</a>
   <a href="#services">Services</a>
-  <a href="#why">Why Choose Us</a>
+  <a href="#work">Our Work</a>
   <a href="#contact">Contact</a>
 </nav>
+
 
 
 <section id="home">
@@ -222,6 +248,7 @@
 
 </body>
 </html>
+
 
 
 
