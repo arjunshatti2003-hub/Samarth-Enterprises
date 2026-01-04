@@ -94,7 +94,43 @@
     margin: 8px;
   }
 }
+        /* ===== IMAGE FIX (NO ZOOM) ===== */
+.work-item img {
+  width: 100%;
+  height: auto;        /* keeps original ratio */
+  object-fit: unset;  /* stops zoom */
+  display: block;
+  border-radius: 12px;
+}
+/* ===== MODERN HEADER ===== */
+.main-header {
+  background: linear-gradient(135deg, #0a3d62, #1e3799);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
 
+.logo-box h1 {
+  margin: 10px 0 5px;
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+
+.logo-box p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.logo-icon {
+  font-size: 48px;
+  background: white;
+  color: #1e3799;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
 
     </style>
     
@@ -103,7 +139,7 @@
 
 <header class="main-header">
   <div class="logo-box">
-    <div class="logo-icon">SE</div>
+    <div class="logo-icon">💧</div>
     <h1>Samarth Enterprises</h1>
     <p>Professional Waterproofing Contractors in Navi Mumbai</p>
   </div>
@@ -248,6 +284,7 @@
 
 </body>
 </html>
+
 
 
 
