@@ -5,70 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samarth Enterprises | Waterproofing Services in Navi Mumbai</title>
     <style>
-/* ===== HEADER & LOGO ===== */
-.site-header {
-  background: linear-gradient(135deg, #1e3799, #0a3d62);
-  color: #fff;
+        
+/* OUR WORK SECTION */
+#work {
+  padding: 60px 20px;
+  background: #f8f9fb;
   text-align: center;
-  padding: 40px 20px;
 }
 
-.logo-box {
-  max-width: 900px;
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
   margin: auto;
 }
 
-.logo-icon {
-  width: 70px;
-  height: 70px;
-  margin: 0 auto 10px;
-  background: #ffffff;
-  color: #1e3799;
-  font-size: 26px;
-  font-weight: bold;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+/* CARD */
+.work-item {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
 }
 
-.site-header h1 {
-  margin: 10px 0 5px;
-  font-size: 36px;
-  letter-spacing: 1px;
+.work-item:hover {
+  transform: translateY(-8px);
 }
 
-.site-header p {
+/* IMAGE FIX (IMPORTANT) */
+.work-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* TEXT */
+.work-text {
+  padding: 20px;
+}
+
+.work-text h3 {
   margin: 0;
-  font-size: 16px;
-  opacity: 0.9;
-}
-
-/* ===== NAVBAR ===== */
-.main-nav {
-  background: #ffffff;
-  text-align: center;
-  padding: 12px 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-.main-nav a {
-  color: #1e3799;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.main-nav a:hover {
+  font-size: 18px;
   color: #0a3d62;
-  border-bottom: 2px solid #0a3d62;
-  padding-bottom: 4px;
 }
 
+.work-text p {
+  margin-top: 6px;
+  color: #666;
+  font-size: 14px;
+}
 
     </style>
+    
 </head>
 <body>
 
@@ -102,64 +106,72 @@
 
 
 <section id="work">
-  <h2>Our Completed Projects</h2>
-  <p>Trusted Waterproofing Contractor for Residential & Commercial Projects</p>
+  <h2 class="section-title">Our Completed Projects</h2>
+  <p class="section-subtitle">
+    Trusted Waterproofing Contractor for Residential & Commercial Projects
+  </p>
 
   <div class="work-grid">
 
-  <div class="work-item">
-    <a href="platinum-emporius-ulwe.jpg" target="_blank">
-      <img src="platinum-emporius-ulwe.jpg" alt="Platinum Emporius Ulwe">
-    </a>
-    <p><strong>Platinum Emporius</strong><br>Sector 17, Ulwe, Navi Mumbai</p>
-  </div>
+    <div class="work-item">
+      <img src="platinum-emporius-ulwe.jpg" alt="Platinum Emporius">
+      <div class="work-text">
+        <h3>Platinum Emporius</h3>
+        <p>Sector 17, Ulwe, Navi Mumbai</p>
+      </div>
+    </div>
 
-  <div class="work-item">
-    <a href="platinum-crescenzo-seawoods.jpg" target="_blank">
-      <img src="platinum-crescenzo-seawoods.jpg" alt="Platinum Crescenzo Seawoods">
-    </a>
-    <p><strong>Platinum Crescenzo</strong><br>Sector 38, Seawoods, Navi Mumbai</p>
-  </div>
+    <div class="work-item">
+      <img src="platinum-crescenzo-seawoods.jpg" alt="Platinum Crescenzo">
+      <div class="work-text">
+        <h3>Platinum Crescenzo</h3>
+        <p>Sector 38, Seawoods, Navi Mumbai</p>
+      </div>
+    </div>
 
-  <div class="work-item">
-    <a href="one-platinum-belapur.jpg" target="_blank">
-      <img src="one-platinum-belapur.jpg" alt="One Platinum Belapur">
-    </a>
-    <p><strong>One Platinum</strong><br>Sector 15, CBD Belapur, Navi Mumbai</p>
-  </div>
+    <div class="work-item">
+      <img src="one-platinum-belapur.jpg" alt="One Platinum">
+      <div class="work-text">
+        <h3>One Platinum</h3>
+        <p>Sector 15, CBD Belapur</p>
+      </div>
+    </div>
 
-  <div class="work-item">
-    <a href="elpro-city-square-pune.jpg" target="_blank">
-      <img src="elpro-city-square-pune.jpg" alt="Elpro City Square Pune">
-    </a>
-    <p><strong>Elpro City Square Mall</strong><br>Chinchwad, Pune</p>
-  </div>
+    <div class="work-item">
+      <img src="elpro-city-square-pune.jpg" alt="Elpro City Square">
+      <div class="work-text">
+        <h3>Elpro City Square Mall</h3>
+        <p>Chinchwad, Pune</p>
+      </div>
+    </div>
 
-  <div class="work-item">
-    <a href="tapovan-aura-ulwe.jpg" target="_blank">
-      <img src="tapovan-aura-ulwe.jpg" alt="Tapovan Aura Ulwe">
-    </a>
-    <p><strong>Tapovan Aura</strong><br>Sector 9, Ulwe, Navi Mumbai</p>
-  </div>
+    <div class="work-item">
+      <img src="tapovan-aura-ulwe.jpg" alt="Tapovan Aura">
+      <div class="work-text">
+        <h3>Tapovan Aura</h3>
+        <p>Sector 9, Ulwe, Navi Mumbai</p>
+      </div>
+    </div>
 
-  <div class="work-item">
-    <a href="platinum-westwoods-seawoods.jpg" target="_blank">
+    <div class="work-item">
       <img src="platinum-westwoods-seawoods.jpg" alt="Platinum Westwoods">
-    </a>
-    <p><strong>Platinum Westwoods</strong><br>Sector 42, Seawoods West, Navi Mumbai</p>
-  </div>
+      <div class="work-text">
+        <h3>Platinum Westwoods</h3>
+        <p>Sector 42, Seawoods West</p>
+      </div>
+    </div>
 
-  <div class="work-item">
-    <a href="ramsheth-thakur-school-ulwe.jpg" target="_blank">
-      <img src="ramsheth-thakur-school-ulwe.jpg" alt="Ramsheth Thakur Public School">
-    </a>
-    <p><strong>Ramsheth Thakur Public School</strong><br>Sector 12, Ulwe, Navi Mumbai</p>
-  </div>
+    <div class="work-item">
+      <img src="ramsheth-thakur-school-ulwe.jpg" alt="Ramsheth Thakur School">
+      <div class="work-text">
+        <h3>Ramsheth Thakur Public School</h3>
+        <p>Sector 12, Ulwe</p>
+      </div>
+    </div>
 
-</div>
+  </div>
 </section>
 
-    
 <section id="services">
     <h2>Our Waterproofing Services</h2>
 
@@ -210,6 +222,7 @@
 
 </body>
 </html>
+
 
 
 
