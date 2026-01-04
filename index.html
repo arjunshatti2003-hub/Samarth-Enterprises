@@ -5,27 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samarth Enterprises | Waterproofing Services in Navi Mumbai</title>
     <style>
+/* ===== OUR WORK - MODERN STYLE ===== */
+
+#work {
+  margin-top: 50px;
+}
+
+#work h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#work p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
 }
 
 .work-item {
   background: #ffffff;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
 }
 
 .work-item img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 8px;
 }
 
+.work-item p {
+  padding: 15px;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.work-item strong {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 5px;
+  color: #0a3d62;
+}
 
     </style>
 </head>
@@ -151,6 +186,7 @@
 
 </body>
 </html>
+
 
 
 
