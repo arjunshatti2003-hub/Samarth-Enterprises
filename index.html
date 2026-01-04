@@ -5,88 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samarth Enterprises | Waterproofing Services in Navi Mumbai</title>
     <style>
-/* ===== OUR WORK - MODERN STYLE ===== */
-
-#work {
-  margin-top: 50px;
-}
-
-#work h2 {
+/* ===== HEADER & LOGO ===== */
+.site-header {
+  background: linear-gradient(135deg, #1e3799, #0a3d62);
+  color: #fff;
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 10px;
+  padding: 40px 20px;
 }
 
-#work p {
-  text-align: center;
-  color: #555;
-  margin-bottom: 40px;
+.logo-box {
+  max-width: 900px;
+  margin: auto;
 }
 
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-
-.work-item {
+.logo-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 10px;
   background: #ffffff;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #1e3799;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
-.work-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+.site-header h1 {
+  margin: 10px 0 5px;
+  font-size: 36px;
+  letter-spacing: 1px;
 }
 
-.work-item img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-.work-item p {
-  padding: 15px;
+.site-header p {
   margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ===== NAVBAR ===== */
+.main-nav {
+  background: #ffffff;
+  text-align: center;
+  padding: 12px 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.main-nav a {
+  color: #1e3799;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
   font-size: 15px;
-  line-height: 1.4;
 }
 
-.work-item strong {
-  display: block;
-  font-size: 17px;
-  margin-bottom: 5px;
+.main-nav a:hover {
   color: #0a3d62;
+  border-bottom: 2px solid #0a3d62;
+  padding-bottom: 4px;
 }
-.work-item a {
-  display: block;
-}
-
-.work-item a img {
-  cursor: pointer;
-}
-        
 
 
     </style>
 </head>
 <body>
 
-<header>
+<header class="site-header">
+  <div class="logo-box">
+    <div class="logo-icon">SE</div>
     <h1>Samarth Enterprises</h1>
     <p>Professional Waterproofing Contractors in Navi Mumbai</p>
+  </div>
 </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#why">Why Choose Us</a>
-    <a href="#contact">Contact</a>
+<nav class="main-nav">
+  <a href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#services">Services</a>
+  <a href="#why">Why Choose Us</a>
+  <a href="#contact">Contact</a>
 </nav>
+
 
 <section id="home">
     <h2>Complete Waterproofing Solutions for Entire Buildings</h2>
@@ -209,6 +210,7 @@
 
 </body>
 </html>
+
 
 
 
